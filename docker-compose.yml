@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+  container1:
+    container_name: container1
+    image: dockernode
+    command: container1
+    networks:
+      - project1network
+  container2:
+    container_name: container2
+    image: dockernode
+    command: container2
+    networks:
+      - project1network
+  container3:
+    container_name: container3
+    image: dockernode
+    command: container3
+    networks:
+      - project1network
+  container4:
+    container_name: container4
+    image: dockernode
+    command: container4
+    networks:
+      - project1network
+  container5:
+    container_name: container5
+    image: dockernode
+    command: container5
+    networks:
+      - project1network
+  container6:
+    container_name: container6
+    image: dockernode
+    command: container6
+    networks:
+      - project1network
+  container7:
+    container_name: container7
+    image: dockernode
+    command: container7
+    networks:
+      - project1network
+
+networks:
+  project1network:
+    external: true
